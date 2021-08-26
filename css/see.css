@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.navbar {
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    width: 100%;
+    transition: top 0.3s;
+    overflow: hidden;
+    top: 0%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #e26425;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background-color: #e26425;
+    color: black;
+}
+
+
+/*.............................................*/
+
+.container {
+    width: 250px;
+    height: 350px;
+    background: url(back.jpg);
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -10%);
+    perspective: 1000px;
+}
+
+.container p {
+    color: #e26425;
+    text-align: center;
+    font-size: 100%;
+}
+
+.cover {
+    width: 210px;
+    height: 100%;
+    position: absolute;
+    left: 40px;
+    background-color: greenyellow;
+    transform: rotateY(0deg);
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: all .5s ease-in;
+}
+
+.container:hover .cover {
+    transform: rotateY(-180deg);
+}
+
+figure {
+    margin: 0;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+figure.front {
+    background: url(front.jpg);
+}
+
+figure.back {
+    background: url(front.jpg);
+    transform: rotateY(180deg);
+}

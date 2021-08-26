@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Float four columns side by side */
+        
+        .column {
+            float: left;
+            width: 25%;
+            padding: 0 10px;
+        }
+        /* Remove extra left and right margins, due to padding */
+        
+        .row {
+            margin: 0 -5px;
+        }
+        /* Clear floats after the columns */
+        
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        /* Responsive columns */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        /* Style the counter cards */
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            padding: 16px;
+            text-align: center;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Responsive Column Cards</h2>
+    <p>Resize the browser window to see the effect.</p>
+
+    <div class="row">
+        <div class="column">
+            <div class="card">
+                <h3>Card 1</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h3>Card 2</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h3>Card 3</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="card">
+                <h3>Card 4</h3>
+                <p>Some text</p>
+                <p>Some text</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+.gallery { margin: 4% auto; width: 210px; height: 140px; position: relative; perspective: 1000px; } #carousel { width: 100%; height: 100%; position: absolute; transform-style: preserve-3d; animation: rotation 20s infinite linear; } #carousel:hover { animation-play-state:
+paused; } #carousel figure { display: block; position: absolute; width: 90%; height: 78%; left: 10px; top: 10%; background: black; overflow: hidden; border: solid 5px black; } #carousel figure:nth-child(1) { transform: rotateY(0deg) translateZ(288px);
+} #carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(288px); } #carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(288px); } #carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(288px); } #carousel figure:nth-child(5)
+{ transform: rotateY(1600deg) translateZ(288px); } #carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(288px); } #carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(288px); } #carousel figure:nth-child(8) { transform:
+rotateY(280deg) translateZ(288px); } #carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(288px); } #carousel figure:nth-child(10) { transform: rotateY(360deg) translateZ(288px); } #carousel img { -webkit-filter: grayscale(1); transform:
+scale(1.2, 1.2); } #carousel img:hover { -webkit-filter: grayscale(0); transform: scale(1.2, 1.2); } @keyframes rotation { from { transform: rotateY(0deg); } to { transform: rotateY(360deg); } }
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"/> -->
+    <title>
+
+
+    </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="work.html">My Work</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+
+    </div>
+
+
+    <div class="gallery">
+        <div id="carousel">
+            <figure><img src="image/res.jpg" alt=""></figure>
+            <figure><img src="image/bulletw hand.png" alt=""></figure>
+            <figure><img src="image/SINKET.jpg" alt=""></figure>
+            <figure><img src="image/prison.png" alt=""></figure>
+            <figure><img src="image/lamp.png" alt=""></figure>
+            <figure><img src="image/teddy.png" alt=""></figure>
+            <figure><img src="image/prison.png" alt=""></figure>
+            <figure><img src="image/res.jpg" alt=""></figure>
+            <figure><img src="image/res.jpg" alt=""></figure>
+            <figure><img src="image/res.jpg" alt=""></figure>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+    <div class="box">
+        <h2>
+            ABOUT MYSELF.
+        </h2>
+        <p2>
+            Hey there, my name is Resian Senteu. I am a web designer and 3d animator. My skill sets include Javascript, angular , PHP progrmming languages. In animation I use 3d modelling and 3d animation. I use adobe softwares for editing video and images
+        </p2>
+        </br>
+        </br>
+        </br>
+        </br>
+
+        <h2>
+            MY SKILLS.
+        </h2>
+        <p2>
+            Hey there, my name is Resian Senteu. I am a web designer and 3d animator. My skill sets include Javascript, angular , PHP progrmming languages. In animation I use 3d modelling and 3d animation. I use adobe softwares for editing video and images
+        </p2>
+        </br>
+        </br>
+        </br>
+        </br>
+        <h2>
+            EDUCATION.
+        </h2>
+        <p2>
+            Hey there, my name is Resian Senteu. I am a web designer and 3d animator. My skill sets include Javascript, angular , PHP progrmming languages. In animation I use 3d modelling and 3d animation. I use adobe softwares for editing video and images
+        </p2>
+        </br>
+        </br>
+        </br>
+        </br>
+        <h2>
+            HOBBY.
+        </h2>
+        <p2>
+            Hey there, my name is Resian Senteu. I am a web designer and 3d animator. My skill sets include Javascript, angular , PHP progrmming languages. In animation I use 3d modelling and 3d animation. I use adobe softwares for editing video and images
+        </p2>
+    </div>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</body>
+
+</html>
