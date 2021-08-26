@@ -1,6 +1,6 @@
 body {
     font-family: 'Roboto', sans-serif;
-    background-image: url('/image/bg.jpg');
+    background-image: url('./image/bg.jpg');
     background-size: auto;
 }
 
@@ -26,7 +26,7 @@ body {
     top: 0%;
     z-index: -1;
     position: absolute;
-    background-image: url('/image/bgtop.jpg');
+    background-image: url('./image/bgtop.jpg');
 }
 
 .navbar .name1 a {
